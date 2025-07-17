@@ -3,6 +3,8 @@
   let students = JSON.parse(localStorage.getItem('students')) || [];
   let editIndex = -1;
 
+
+// to display the rows in the table
   function renderStudents() {
     tableBody.innerHTML = '';
     students.forEach((student, index) => {
@@ -21,6 +23,8 @@
     });
   }
 
+
+//        Function to validate input fields
   function validateInput(name, studentId, email, contact) {
     const nameRegex = /^[A-Za-z ]+$/;
     const idRegex = /^\d+$/;
@@ -55,6 +59,8 @@
     return true;
   }
 
+
+// Envent button for submit
   form.addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -79,6 +85,7 @@
     renderStudents();
   });
 
+// Function to edit and delete student records
   function editStudent(index) {
     const student = students[index];
     document.getElementById('name').value = student.name;

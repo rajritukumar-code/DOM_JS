@@ -3,15 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Student Registation</title>
+    <title>Student Registration</title>
     <link href="./src/output.css" rel="stylesheet" />
     <script src="index.js" defer></script>
   </head>
   <body>
+    <!--Section Start   -->
     <section>
       <div
         class="max-w-[1000px] m-auto p-8 bg-[#fff] rounded-2xl shadow-[0_4px_10px_rgba(0,0,0,0.1)]"
       >
+      <!-- head start -->
         <h1 class="text-center text-[2.06rem] font-bold text-text ">
           Student Registration System
         </h1>
@@ -19,6 +21,9 @@
           Register students and manage their data. You can add, edit, or delete
           records. Data is saved in your browser.
         </p>
+        <!-- head end -->
+         
+        <!-- Form Start  -->
 
         <form
           class="grid gap-4 grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] max-sm:grid-cols-1"
@@ -59,7 +64,8 @@
             Add Student
           </button>
         </form>
-
+        <!-- form End here -->
+<!-- table start  -->
         <table
           class="block mt-8 w-full max-h-[400px] overflow-y-auto border-collapse"
           id="studentTable"
@@ -83,11 +89,14 @@
               </th>
             </tr>
           </thead>
+          <!-- table body display here  -->
           <tbody>
             <!-- Dynamic rows will go here -->
           </tbody>
         </table>
+        <!-- table End  -->
       </div>
     </section>
+    <!--Section End   -->
   </body>
 </html>
