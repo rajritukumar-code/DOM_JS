@@ -11,6 +11,7 @@
     --spacing: 0.25rem;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
     --radius-2xl: 1rem;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -260,6 +261,12 @@
   .border-\[\#\] {
     border-color: #;
   }
+  .border-\[\#cc\] {
+    border-color: #cc;
+  }
+  .border-\[\#ccc\] {
+    border-color: #ccc;
+  }
   .border-\[\#dd\] {
     border-color: #dd;
   }
@@ -317,6 +324,10 @@
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .font-extrabold {
+    --tw-font-weight: var(--font-weight-extrabold);
+    font-weight: var(--font-weight-extrabold);
   }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
