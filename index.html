@@ -10,7 +10,7 @@
   <body>
     <section>
       <div
-        class="max-w-[1000px] m-auto p-8 bg-[#fff] rounded-2xl shadow-[ 0 4px 10px rgba(0,0,0,0.1)]"
+        class="max-w-[1000px] m-auto p-8 bg-[#fff] rounded-2xl shadow-[0_4px_10px_rgba(0,0,0,0.1)]"
       >
         <h1 class="text-center text-[2.06rem] font-medium text-text">
           Student Registration System
@@ -59,20 +59,31 @@
             Add Student
           </button>
         </form>
-        
 
-        <table class="block mt-8 w-full max-h-[400px] overflow-y-auto border-collapse" id="studentTable">
+        <table
+          class="block mt-8 w-full max-h-[400px] overflow-y-auto border-collapse"
+          id="studentTable"
+        >
           <thead>
             <tr>
-              <th class="border border-solid text-center p-2.5 text-bg bg-text">Name</th>
-              <th class="border border-solid text-center p-2.5 text-bg bg-text">Student ID</th>
-              <th class="border border-solid text-center p-2.5 text-bg bg-text">Email</th>
-              <th class="border border-solid text-center p-2.5 text-bg bg-text">Contact</th>
-              <th class="border border-solid text-center p-2.5 text-bg bg-text">Actions</th>
+              <th class="border border-solid text-center p-2.5 border-[#ddd] text-bg bg-text">
+                Name
+              </th>
+              <th class="border border-solid  text-center p-2.5 border-[#ddd] text-bg bg-text">
+                Student ID
+              </th>
+              <th class="border border-solid text-center p-2.5 border-[#ddd] text-bg bg-text">
+                Email
+              </th>
+              <th class="border border-solid text-center p-2.5 border-[#ddd] text-bg bg-text">
+                Contact
+              </th>
+              <th class="border border-solid text-center p-2.5 border-[#ddd] text-bg bg-text">
+                Actions
+              </th>
             </tr>
           </thead>
           <tbody>
-             
             <!-- Dynamic rows will go here -->
           </tbody>
         </table>
