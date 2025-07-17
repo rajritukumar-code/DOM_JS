@@ -1,47 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Student Registation</title>
-    <link href="./src/output.css" rel="stylesheet">
+    <link href="./src/output.css" rel="stylesheet" />
     <script src="index.js" defer></script>
-</head>
-<body>
-   <section>
-    <div class="max-w-[1000px] m-auto p-8 bg-[#fff] rounded-2xl shadow-[ 0 4px 10px rgba(0,0,0,0.1)]">
+  </head>
+  <body>
+    <section>
+      <div
+        class="max-w-[1000px] m-auto p-8 bg-[#fff] rounded-2xl shadow-[ 0 4px 10px rgba(0,0,0,0.1)]"
+      >
+        <h1 class="text-center text-[2.06rem] font-medium text-text">
+          Student Registration System
+        </h1>
+        <p class="text-center mb-8 text-second_text">
+          Register students and manage their data. You can add, edit, or delete
+          records. Data is saved in your browser.
+        </p>
 
-        <h1 class="text-center text-[2.06rem] font-medium text-text">Student Registration System</h1>
-      <p class="text-center mb-8 text-second_text">
-        Register students and manage their data. You can add, edit, or delete
-        records. Data is saved in your browser.
-      </p>
+        <form
+          class="grid gap-4 grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] max-sm:grid-cols-1"
+          id="studentForm"
+        >
+          <input
+            class="p-2.5 border-[1px] border-solid rounded-[8px] text-[16px]"
+            type="text"
+            id="name"
+            placeholder="Student Name"
+            required
+          />
+          <input
+            class="p-2.5 border-[1px] border-solid rounded-[8px] text-[16px]"
+            type="text"
+            id="studentId"
+            placeholder="Student ID"
+            required
+          />
+          <input
+            class="p-2.5 border-[1px] border-solid rounded-[8px] text-[16px]"
+            type="email"
+            id="email"
+            placeholder="Email ID"
+            required
+          />
+          <input
+            class="p-2.5 border-[1px] border-solid rounded-[8px] text-[16px]"
+            type="text"
+            id="contact"
+            placeholder="Contact Number"
+            required
+          />
+          <button
+            class="p-2.5 col-span-2 bg-text text-bg font-bold rounded-2xl cursor-pointer transition-colors duration-300 hover:bg-bg-hover max-sm:col-span-1"
+            type="submit"
+          >
+            Add Student
+          </button>
+        </form>
+        
 
-      <form class="grid gap-4 grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] " id="studentForm">
-        <input  class="p-2.5 border-[1px] border-solid rounded-[8px] text-[16px]" type="text" id="name" placeholder="Student Name" required />
-        <input  class="p-2.5 border-[1px] border-solid rounded-[8px] text-[16px]" type="text" id="studentId" placeholder="Student ID" required />
-        <input  class="p-2.5 border-[1px] border-solid rounded-[8px] text-[16px]" type="email" id="email" placeholder="Email ID" required />
-        <input  class="p-2.5 border-[1px] border-solid rounded-[8px] text-[16px]" type="text" id="contact" placeholder="Contact Number" required />
-        <button class="p-2.5 col-span-2 bg-text text-bg font-bold rounded-2xl cursor-pointer transition-colors duration-300"  type="submit" >Add Student</button>
-      </form>
-      
-      <table id="studentTable">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Student ID</th>
-            <th>Email</th>
-            <th>Contact</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Dynamic rows will go here -->
-        </tbody>
-      </table>
-
-    </div>
-   </section>
-    
-</body>
+        <table class="block mt-8 w-full max-h-[400px] overflow-y-auto border-collapse" id="studentTable">
+          <thead>
+            <tr>
+              <th class="border border-solid text-center p-2.5 text-bg bg-text">Name</th>
+              <th class="border border-solid text-center p-2.5 text-bg bg-text">Student ID</th>
+              <th class="border border-solid text-center p-2.5 text-bg bg-text">Email</th>
+              <th class="border border-solid text-center p-2.5 text-bg bg-text">Contact</th>
+              <th class="border border-solid text-center p-2.5 text-bg bg-text">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+             
+            <!-- Dynamic rows will go here -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </body>
 </html>

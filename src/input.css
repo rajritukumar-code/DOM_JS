@@ -6,6 +6,9 @@
    --color-text:#00796b;
    --color-second_text:#555;
    --color-bg:#fff;
+   --color-bg-hover:#004d40
+
+   --breakpoint-sm:600px;
 }
 
 @layer base {
