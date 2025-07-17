@@ -3,11 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student Registation</title>
     <link href="./output.css" rel="stylesheet">
     <script src="index.js" defer></script>
 </head>
 <body>
+   <section>
+    <div class="contaner">
+         <h1>Student Registration System</h1>
+      <p>
+        Register students and manage their data. You can add, edit, or delete
+        records. Data is saved in your browser.
+      </p>
+
+      <form id="studentForm">
+        <input type="text" id="name" placeholder="Student Name" required />
+        <input type="text" id="studentId" placeholder="Student ID" required />
+        <input type="email" id="email" placeholder="Email ID" required />
+        <input type="text" id="contact" placeholder="Contact Number" required />
+        <button type="submit" class="btn">Add Student</button>
+      </form>
+
+      <table id="studentTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Student ID</th>
+            <th>Email</th>
+            <th>Contact</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dynamic rows will go here -->
+        </tbody>
+      </table>
+
+    </div>
+   </section>
     
 </body>
 </html>
