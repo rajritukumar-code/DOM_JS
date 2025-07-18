@@ -60,7 +60,7 @@
   }
 
 
-// Envent button for submit
+// Event button for submit
   form.addEventListener('submit', function(e) {
     e.preventDefault();
 
